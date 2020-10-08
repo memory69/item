@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- {{grouponList}} -->
-    <!-- {{sku.tree.v.previewImgUrl}} -->
+    <!-- {{sku.tree.v.previewImgUrl}} -->111111
   </div>
 </template>
 
