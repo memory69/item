@@ -1,0 +1,9 @@
+{
+  "ret": true,
+  "data": [
+    { "id": 1, "username": "admin", "password": 123, "role": 1 },
+    { "id": 2, "username": "zhangsan", "password": 1234, "role": 2 },
+    { "id": 3, "username": "lisi", "password": 123456, "role": 3 },
+    { "id": 4, "username": "wangming", "password": 1232, "role": 3 }
+  ]
+}

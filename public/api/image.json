@@ -1,0 +1,12 @@
+{
+    "ret":true,
+    "data":{
+        "images":[
+            {"id":1,"Urlimg":"https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg"},
+            {"id":2,"Urlimg":"https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg"},
+            {"id":3,"Urlimg":"https://img.alicdn.com/tfs/TB1nUkqSpY7gK0jSZKzXXaikpXa-520-280.jpg_q90_.webp"},
+            {"id":4,"Urlimg":"https://img.alicdn.com/tps/i4/TB16ZRFg6MZ7e4jSZFOSut7epXa.jpg_q90_.webp"},
+            {"id":5,"Urlimg":"https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg"}
+        ]
+    }
+}
