@@ -141,9 +141,9 @@ export default {
       })
         .then((res) => {
           let dt = res.data.data.grouponList;
-          let detail = dt.find((item) => id == u.id);
+          let detail = dt.find((item) => id == item.id);
           this.$store.commit('setDetail', detail);
-          this.$router.push('/detail' + id);
+          this.$router.push('/detail/' + id);
         })
         .catch((error) => console.log('Home请求失败'));
       // this.$router.push('/detail/'+id)
