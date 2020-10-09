@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     onClickLeft() {
-      this.$router.push('/home');
+      this.$router.go(-1);
     },
   },
   created() {
@@ -33,7 +33,7 @@ export default {
     // });
     this.request({
       url: '/wx/home/index',
-    }).then((res) => this.channel.res.data.data);
+    }).then((res) => (this.channel = res.data.data.channel));
   },
 };
 </script>
