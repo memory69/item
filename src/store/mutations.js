@@ -14,7 +14,6 @@ export default {
     // console.log(index);
   },
   setEdit(state, index) {
-    // var copy = Object.assign({}, index);
     state.onedit = index;
     // console.log(index);
   },
@@ -24,6 +23,7 @@ export default {
   },
   setBuyCar(state, index) {
     state.buycar = index;
+
     // console.log(index);
   },
 };
