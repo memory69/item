@@ -6,9 +6,10 @@
       <van-tabbar-item icon="shopping-cart-o">购物车</van-tabbar-item>
       <van-tabbar-item icon="contact">我的</van-tabbar-item>
     </van-tabbar>
-    <home v-show="active == 0"></home>
-    <buy-car v-show="active == 2"></buy-car>
-    <personal v-show="active == 3"></personal>
+    <home v-show="active == 0" />
+    <buy-car v-show="active == 2" />
+    <personal v-show="active == 3" />
+    <classification v-show="active == 1" />
   </div>
 </template>
 
@@ -16,6 +17,7 @@
 import Home from '../home/Home';
 import Personal from '../personal/Personal';
 import BuyCar from '../buycar/BuyCar';
+import Classification from '../classification/Classification';
 export default {
   name: 'CmFooter',
   data() {
@@ -28,6 +30,7 @@ export default {
     Home,
     Personal,
     BuyCar,
+    Classification,
   },
 };
 </script>
