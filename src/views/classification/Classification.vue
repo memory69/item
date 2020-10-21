@@ -8,7 +8,7 @@
     <div class="right">
       <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="空空如也" v-show="isshow" />
 
-      <div v-for="item in goodsList">
+      <div v-for="item in goodsList" @click="detail(item.id)">
         <!-- {{ item.name }} -->
         <van-card
           tag="最新"
@@ -58,6 +58,9 @@ export default {
         this.isshow = false;
       }
       // console.log(this.goodsList);
+    },
+    detail(index) {
+      this.$router.push('/detail/' + index);
     },
   },
   watch: {},
