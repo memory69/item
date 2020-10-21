@@ -12,6 +12,7 @@ const SetUp = () => import('../views/setup/SetUp.vue');
 const Address = () => import('../views/address/Address.vue');
 const AddAddress = () => import('../views/address/addaddress/AddAddress.vue');
 const SubTag = () => import('../views/submitorders/subtag/SubTag.vue');
+const Specific = () => import('../views/specific/Specific.vue')
 
 import { Sku } from 'vant';
 Vue.use(Sku);
@@ -37,6 +38,11 @@ const routes = [
     path: '/cmfooter',
     name: 'CmFooter',
     component: CmFooter,
+  },
+  {
+    path: '/specific',
+    name: 'Specific',
+    component: Specific,
   },
   {
     path: '/test',

@@ -6,8 +6,18 @@
       </van-sidebar>
     </div>
     <div class="right">
+      <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="空空如也" v-show="isshow" />
+
       <div v-for="item in goodsList">
-        {{ item.name }}
+        <!-- {{ item.name }} -->
+        <van-card
+          tag="最新"
+          :price="item.retailPrice"
+          :desc="item.brief"
+          :title="item.name"
+          :thumb="item.picUrl"
+          :origin-price="item.counterPrice"
+        />
       </div>
     </div>
   </div>
@@ -19,6 +29,7 @@ export default {
   name: 'Classification',
   data() {
     return {
+      isshow: false,
       activeKey: 0,
       //   active: 0,
       floorGoodsList: [],
@@ -40,7 +51,13 @@ export default {
         return index == i;
       });
       goods.forEach((res) => (this.goodsList = res.goodsList));
-      console.log(this.goodsList);
+      if (this.goodsList == '') {
+        // console.log(1111);
+        this.isshow = true;
+      } else {
+        this.isshow = false;
+      }
+      // console.log(this.goodsList);
     },
   },
   watch: {},
@@ -56,6 +73,11 @@ export default {
 .right {
   flex: 1;
   padding: 10px;
-  border: 1px solid red;
+  margin-bottom: 50px;
+  /* border: 1px solid red; */
+}
+.custom-image .van-empty__image {
+  width: 90px;
+  height: 90px;
 }
 </style>

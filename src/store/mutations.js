@@ -4,6 +4,7 @@ export default {
   },
   setDetail(state, index) {
     state.detail = index;
+    // console.log(index);
   },
   setBuyNub(state, index) {
     state.buynub = index;
@@ -26,4 +27,17 @@ export default {
 
     // console.log(index);
   },
+  setShow(state,index){
+    state.show = index
+  },
+  setSearch(state,index){
+    state.search = index
+    // console.log(index);
+  },
+  setTitle(state,index){
+    state.title = index
+  },
+  setSpecific(state,index){
+    state.specific  = index
+  }
 };

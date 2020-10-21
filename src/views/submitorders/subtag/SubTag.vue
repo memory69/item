@@ -22,18 +22,8 @@ import SubmitOrders from '../SubmitOrders';
 export default {
   name: 'SubTag',
   data() {
-    return {
-      //   active: 0,
-    };
+    return {};
   },
-  //   created() {
-  //     this.active = this.actives;
-  //   },
-  //   watch: {
-  //     active() {
-  //       this.active = this.actives;
-  //     },
-  //   },
   methods: {
     onClickLeft() {
       this.$router.go(-1);

@@ -6,18 +6,27 @@
 </template>
 
 <script>
+import { goodsList } from '../network/request';
 export default {
   name: 'test',
   data() {
-    return {};
+    return {
+      total: 0,
+      list: [],
+    };
   },
   methods: {},
   created() {
-    let obj4 = { a: '1' };
-    let obj5 = { b: '2' };
-    let obj6 = { c: '3' };
-    Object.assign(obj4, obj5, obj6);
-    console.log(obj4);
+    goodsList({
+      page: 0,
+      limit: 0,
+    }).then((res) => {
+      //
+      this.total = res.data.data.total;
+      // console.log(res.data.data.list);
+      this.list = res.data.data.list;
+      console.log(this.list);
+    });
   },
 };
 </script>

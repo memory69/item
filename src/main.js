@@ -3,6 +3,9 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './css/common.css';
+//lodash.js
+import _ from 'lodash';
+Vue.prototype._ = _
 
 import { request, myrequest } from './network/request';
 Vue.prototype.request = request;
